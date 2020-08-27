@@ -1,0 +1,12 @@
+.game-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  vertical-align: middle;
+  white-space: nowrap;
+}
