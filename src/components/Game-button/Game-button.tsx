@@ -1,6 +1,7 @@
 import './Game-button.css'
 
-import React, {FC} from 'react'
+import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 interface GameButtonProps {
   image: string
@@ -9,9 +10,9 @@ interface GameButtonProps {
 
 const GameButton: FC<GameButtonProps> = (props) =>{
   return (
-    <a href='.' className='game-button'>
+    <Link to={props.description} className='game-button'>
       <img src={props.image} alt={props.description}/>
-    </a>
+    </Link>
   )
 }
 
