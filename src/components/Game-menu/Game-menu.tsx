@@ -4,13 +4,13 @@ import React from 'react'
 
 import GameButton from '../Game-button/Game-button'
 
-import csIcon from '../../assets/images/cards/cs-go.png'
-import fortniteIcon from '../../assets/images/cards/fortnite.png'
-import lolIcon from '../../assets/images/cards/league-of-legends.png'
-import hsIcon from '../../assets/images/cards/heartstone.png'
-import r6Icon from '../../assets/images/cards/rainbow-six.png'
-import valorantIcon from '../../assets/images/cards/valorant.png'
-import apexIcon from '../../assets/images/cards/apex-legends.png'
+import csIcon from '../../assets/images/game-cards/cs-go.png'
+import fortniteIcon from '../../assets/images/game-cards/fortnite.png'
+import lolIcon from '../../assets/images/game-cards/league-of-legends.png'
+import hsIcon from '../../assets/images/game-cards/heartstone.png'
+import r6Icon from '../../assets/images/game-cards/rainbow-six.png'
+import valorantIcon from '../../assets/images/game-cards/valorant.png'
+import apexIcon from '../../assets/images/game-cards/apex-legends.png'
 
 export default () => {
   return (
