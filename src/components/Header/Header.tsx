@@ -20,25 +20,25 @@ export default () => {
             </Link>
           </div>
           <div className='top-bar-menu-items'>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/'>
+            <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
               TEAMS
-          </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/'>
+            </Link>
+            <Link id='link' className='top-bar-menu-item animated-text' to='/calendar'>
               CALENDAR
-          </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/'>
+            </Link>
+            <Link id='link' className='top-bar-menu-item animated-text' to='/watch'>
               WATCH
-          </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/'>
+            </Link>
+            <Link id='link' className='top-bar-menu-item animated-text' to='/about'>
               ABOUT US
           </Link>
           </div>
         </div>
         <div className='top-bar-menu-right'>
-          <Link id='link' to='/'>
+          <Link id='link' to='/login'>
             <button>Login</button>
           </Link>
-          <Link id='link' to='/'>
+          <Link id='link' to='/register'>
             <button>Register</button>
           </Link>
         </div>
