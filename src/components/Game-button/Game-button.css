@@ -5,15 +5,16 @@
     width: 24rem;
     height: 13rem;
     margin: 1rem;
+    transition: .2s linear;
+}
+
+.game-button:hover {
+    box-shadow: 0 10px 20px -10px #000000;
 }
 
 @media (min-width: 700px) {
     .game-button {
         width: 18rem;
         height: 10.5rem;
-        transition: .2s linear;
-    }
-    .game-button:hover {
-        box-shadow: 0 10px 20px -10px #000000;
     }
 }
