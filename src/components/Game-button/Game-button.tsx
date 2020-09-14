@@ -8,10 +8,10 @@ interface GameButtonProps {
   description: string
 }
 
-const GameButton: FC<GameButtonProps> = (props) =>{
+const GameButton: FC<GameButtonProps> = (props) => {
   return (
     <Link to={props.description} className='game-button'>
-      <img src={props.image} alt={props.description}/>
+      <img src={props.image} alt={props.description} />
     </Link>
   )
 }
