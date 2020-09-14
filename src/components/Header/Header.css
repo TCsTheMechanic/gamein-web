@@ -40,7 +40,7 @@
 }
 
 .side-bar-menu.active {
-    left: 1%;
+    left: .5%;
     transition: all .2s linear;
 }
 
