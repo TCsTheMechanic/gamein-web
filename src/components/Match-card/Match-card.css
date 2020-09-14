@@ -1,0 +1,99 @@
+.match-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: .2s linear;
+    min-height: 120px;
+    background-color: var(--color-background-darker);
+}
+
+.match-card:hover {
+    box-shadow: 0 10px 20px -10px #000000;
+}
+
+.game-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 97vw;
+    margin: 1rem 0 .5rem 0;
+}
+
+.status-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 5rem;
+    margin-left: 1rem;
+    color: #FF0000;
+}
+
+.championship-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 16rem;
+    margin-right: 1rem;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 97vw;
+    height: 8rem;
+    margin: .2rem 0 .8rem 0;
+    background-color: var(--color-background);
+    border-radius: 10px;
+}
+
+.first-team-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    margin-left: 1rem;
+}
+
+.first-team-container img {
+    width: 8rem;
+}
+
+.match-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color-background-darker);
+    border-radius: 50%;
+}
+
+.second-team-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.second-team-container img {
+    width: 9rem;
+}
+
+@media (min-width: 700px) {
+    .match-type {
+        width: 6rem;
+        height: 6rem;
+    }
+    .second-team-container {
+        margin-right: 1rem;
+    }
+}
