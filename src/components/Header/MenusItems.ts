@@ -2,7 +2,7 @@ import { AiOutlineTeam } from 'react-icons/ai'
 import { BiTrophy } from 'react-icons/bi'
 import { VscCalendar } from 'react-icons/vsc'
 import { CgScreen } from 'react-icons/cg'
-import { FcAbout } from 'react-icons/fc'
+import { BsInfoCircle } from 'react-icons/bs'
 
 export const MenusItems = [
   {
@@ -31,7 +31,7 @@ export const MenusItems = [
   },
   {
     id: 4,
-    icon: FcAbout,
+    icon: BsInfoCircle,
     label: 'ABOUT US',
     src: '/about'
   }
