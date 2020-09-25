@@ -1,29 +1,40 @@
 import './GameMenu.css'
 
-import React  from 'react'
+import React, { useState }  from 'react'
+import { TiChevronLeft, TiChevronRight } from 'react-icons/ti'
 
 import GameButton from '../Game-button/GameButton'
-
-import csIcon from '../../assets/images/game-cards/cs-go.png'
-import fortniteIcon from '../../assets/images/game-cards/fortnite.png'
-import lolIcon from '../../assets/images/game-cards/league-of-legends.png'
-import hsIcon from '../../assets/images/game-cards/heartstone.png'
-import r6Icon from '../../assets/images/game-cards/rainbow-six.png'
-import valorantIcon from '../../assets/images/game-cards/valorant.png'
-import apexIcon from '../../assets/images/game-cards/apex-legends.png'
+import { GameMenuItems } from './GameMenuItems'
 
 export default () => {
+  const [xPosition, setXPosition] = useState(0)
+
+  const leftSlide = () => {
+    setXPosition(xPosition + 400)
+  }
+
+  const rightSlide = () => {
+    setXPosition(xPosition - 400)
+  }
 
   return (
   <div className='game-menu'>
-    <div className='menu-items'>
-      <GameButton image={csIcon} description='CS GO' />
-      <GameButton image={fortniteIcon} description='Fortnite' />
-      <GameButton image={lolIcon} description='League of Legends' />
-      <GameButton image={hsIcon} description='Heart Stone' />
-      <GameButton image={r6Icon} description='Rainbow Six Siege' />
-      <GameButton image={valorantIcon} description='Valorant' />
-      <GameButton image={apexIcon} description='Apex Legends' />
+    <div className="menu-left" onClick={leftSlide}>
+      <TiChevronLeft />
+    </div>
+    <div className="menu-right"onClick={rightSlide}>
+      <TiChevronRight />
+    </div>
+    <div className='menu-items' style={{marginLeft: xPosition}}>
+      {GameMenuItems.map((item) => {
+        return(
+          <GameButton 
+            key={item.id} 
+            image={item.img} 
+            description={item.description}
+          />
+        )
+      })}
     </div>
   </div>
   )
