@@ -1,8 +1,8 @@
-import './Game-menu.css'
+import './GameMenu.css'
 
 import React  from 'react'
 
-import GameButton from '../Game-button/Game-button'
+import GameButton from '../Game-button/GameButton'
 
 import csIcon from '../../assets/images/game-cards/cs-go.png'
 import fortniteIcon from '../../assets/images/game-cards/fortnite.png'

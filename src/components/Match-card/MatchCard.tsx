@@ -1,4 +1,4 @@
-import './Match-card.css'
+import './MatchCard.css'
 
 import React from 'react'
 import { Link } from 'react-router-dom'
