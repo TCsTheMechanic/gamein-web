@@ -29,7 +29,7 @@
 .side-bar-menu {
     position: fixed;
     width: 20rem;
-    height: 20rem;
+    height: 25rem;
     top: +7rem;
     left: -100%;
     border-right: 1px #000000 solid;
@@ -87,7 +87,7 @@
     background-position: -100%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .side-bar-icon {
         display: none;
     }

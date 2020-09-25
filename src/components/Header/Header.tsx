@@ -27,6 +27,11 @@ export default () => {
                 </Link>
               </li>
               <li>
+                <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
+                  CHAMPIONCHIPS
+                </Link>
+              </li>
+              <li>
                 <Link id='link' className='top-bar-menu-item animated-text' to='/calendar'>
                   CALENDAR
                 </Link>
@@ -55,6 +60,9 @@ export default () => {
           <div className='top-bar-menu'>
             <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
               TEAMS
+            </Link>
+            <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
+              CHAMPIONSHIPS
             </Link>
             <Link id='link' className='top-bar-menu-item animated-text' to='/calendar'>
               CALENDAR
