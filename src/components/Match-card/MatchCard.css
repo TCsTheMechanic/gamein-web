@@ -7,6 +7,7 @@
     transition: .2s linear;
     min-height: 120px;
     background-color: var(--color-background-darker);
+    margin: 1rem;
 }
 
 .match-card:hover {
@@ -19,7 +20,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 97vw;
+    width: 98%;
     margin: 1rem 0 .5rem 0;
 }
 
@@ -47,7 +48,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 97vw;
+    width: 98%;
     height: 8rem;
     margin: .2rem 0 .8rem 0;
     background-color: var(--color-background);
