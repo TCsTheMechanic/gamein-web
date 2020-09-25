@@ -3,6 +3,8 @@ import './Header.css'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import { MenusItems } from './MenusItems'
+
 import logo from '../../assets/images/icon.png'
 import { GoThreeBars } from 'react-icons/go'
 import { CgClose } from 'react-icons/cg'
@@ -17,39 +19,24 @@ export default () => {
       <div className='top-bar-container'>
         <div className='top-bar-left'>
           <Link to='#' className='side-bar-icon' onClick={showSideBar}>
-            {sideBar ? <CgClose/> : <GoThreeBars/>}
+            {sideBar ? <CgClose /> : <GoThreeBars />}
           </Link>
           <div className={sideBar ? 'side-bar-menu active' : 'side-bar-menu'}>
             <ul>
-              <li>
-                <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
-                  TEAMS
-                </Link>
-              </li>
-              <li>
-                <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
-                  CHAMPIONCHIPS
-                </Link>
-              </li>
-              <li>
-                <Link id='link' className='top-bar-menu-item animated-text' to='/calendar'>
-                  CALENDAR
-                </Link>
-              </li>
-              <li>
-                <Link id='link' className='top-bar-menu-item animated-text' to='/watch'>
-                  WATCH
-                </Link>
-              </li>
-              <li>
-                <Link id='link' className='top-bar-menu-item animated-text' to='/about'>
-                  ABOUT US
-                </Link>
-              </li>
+              {MenusItems.map((item) => {
+                return (
+                  <li>
+                    < item.icon className="side-bar-menu-icon" />
+                    <Link id='link' className='top-bar-menu-item animated-text' to={item.src}>
+                      {item.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
           <div className='logo-container'>
-            <Link className='logo-container-img' to='/'>
+            <Link to='/'>
               <img src={logo} alt="Go back" />
             </Link>
             <Link id='link' className='logo-container-title animated-text' to='/'>
@@ -58,21 +45,13 @@ export default () => {
             </Link>
           </div>
           <div className='top-bar-menu'>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
-              TEAMS
-            </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/teams'>
-              CHAMPIONSHIPS
-            </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/calendar'>
-              CALENDAR
-            </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/watch'>
-              WATCH
-            </Link>
-            <Link id='link' className='top-bar-menu-item animated-text' to='/about'>
-              ABOUT US
-            </Link>
+            {MenusItems.map((item) => {
+              return (
+                <Link id='link' className='top-bar-menu-item animated-text' to={item.src}>
+                  {item.label}
+                </Link>
+              )
+            })}
           </div>
         </div>
         <div className='top-bar-login-menu'>

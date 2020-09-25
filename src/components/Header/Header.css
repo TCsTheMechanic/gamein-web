@@ -24,12 +24,17 @@
     font-size: 4rem;
     color: #ffffff;
     margin-left: 2rem;
+    transition: all .2s linear;
+}
+
+.side-bar-icon:hover {
+    transform: scale(1.1);
 }
 
 .side-bar-menu {
     position: fixed;
     width: 20rem;
-    height: 25rem;
+    height: 27rem;
     top: +7rem;
     left: -100%;
     border-right: 1px #000000 solid;
@@ -45,9 +50,17 @@
 }
 
 .side-bar-menu ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 500;
     padding: 1.5rem;
     border-bottom: 1px #cfcfcf solid
+}
+
+.side-bar-menu-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
 }
 
 .logo-container {
@@ -57,10 +70,15 @@
     width: 26rem;
 }
 
-.logo-container-img {
+.logo-container img {
     display: flex;
     align-items: center;
     width: 10rem;
+    transition: all .2s linear;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
 }
 
 .logo-container-img img {
