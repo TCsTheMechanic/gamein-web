@@ -25,7 +25,7 @@ export default () => {
             <ul>
               {MenusItems.map((item) => {
                 return (
-                  <li>
+                  <li key={item.id}>
                     < item.icon className="side-bar-menu-icon" />
                     <Link id='link' className='top-bar-menu-item animated-text' to={item.src}>
                       {item.label}
@@ -47,7 +47,7 @@ export default () => {
           <div className='top-bar-menu'>
             {MenusItems.map((item) => {
               return (
-                <Link id='link' className='top-bar-menu-item animated-text' to={item.src}>
+                <Link key={item.id} id='link' className='top-bar-menu-item animated-text' to={item.src}>
                   {item.label}
                 </Link>
               )
