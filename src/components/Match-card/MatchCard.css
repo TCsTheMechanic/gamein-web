@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 98vw;
     border-radius: 10px;
     transition: .2s linear;
     min-height: 120px;
