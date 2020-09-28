@@ -4,7 +4,7 @@
     width: 99vw;
     background-color: var(--color-background-darker);
     border-radius: 10px;
-    opacity: .9;
+    transition: all .2s linear;
 }
 
 .top-bar-container {
@@ -107,6 +107,9 @@
 }
 
 @media (min-width: 1200px) {
+    .page-header {
+        opacity: .9;
+    }
     .side-bar-icon {
         display: none;
     }
