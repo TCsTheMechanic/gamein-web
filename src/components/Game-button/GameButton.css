@@ -17,10 +17,6 @@
     box-shadow: 0 10px 20px -10px #000000;
 }
 
-.game-button img:hover {
-    transform: scale(1.05);
-}
-
 @media (min-width: 700px) {
     .game-button {
         width: 18rem;
