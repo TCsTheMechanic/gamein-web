@@ -4,6 +4,7 @@
     width: 99vw;
     background-color: var(--color-background-darker);
     border-radius: 10px;
+    opacity: .9;
 }
 
 .top-bar-container {

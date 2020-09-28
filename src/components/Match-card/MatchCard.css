@@ -8,6 +8,7 @@
     transition: .2s linear;
     min-height: 120px;
     background-color: var(--color-background-darker);
+    opacity: .9;
     margin-bottom: 1rem;
 }
 
