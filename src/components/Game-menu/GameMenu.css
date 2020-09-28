@@ -33,9 +33,11 @@
 }
 
 .menu-left {
+    margin-left: .2rem;
     left: 0
 }
 
 .menu-right {
+    margin-right: .2rem;
     right: 0;
 }
