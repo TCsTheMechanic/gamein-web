@@ -1,7 +1,7 @@
 .game-button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 20rem;
     height: 11rem;
     margin: 1rem;
@@ -10,16 +10,10 @@
 
 .game-button img {
     width: 100%;
-    transition: .2s linear;
+    height: 99%;
 }
 
 .game-button:hover {
+    border-bottom: 2px solid var(--color-primary);
     box-shadow: 0 10px 20px -10px #000000;
-}
-
-@media (min-width: 700px) {
-    .game-button {
-        width: 18rem;
-        height: 10rem;
-    }
 }
