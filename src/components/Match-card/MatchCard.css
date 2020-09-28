@@ -16,39 +16,34 @@
     box-shadow: 0 10px 20px -10px #000000;
 }
 
-.game-status {
+.game-status,
+.status-container,
+.championship-container,
+.game-info,
+.first-team-container,
+.second-team-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.game-status {
     width: 99%;
     margin: 1rem 0 .5rem 0;
 }
 
 .status-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 5rem;
     margin-left: 1rem;
     color: #FF0000;
 }
 
 .championship-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 16rem;
     margin-right: 1rem;
 }
 
 .game-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 98%;
     height: 8rem;
     margin: .2rem 0 .8rem 0;
@@ -57,10 +52,6 @@
 }
 
 .first-team-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 30vw;
     margin-left: 1rem;
 }
@@ -80,10 +71,6 @@
 }
 
 .second-team-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 30vw;
 }
 

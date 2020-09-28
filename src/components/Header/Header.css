@@ -16,7 +16,6 @@
 
 .top-bar-left {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -52,7 +51,6 @@
 
 .side-bar-menu ul li {
     display: flex;
-    flex-direction: row;
     align-items: center;
     font-weight: 500;
     padding: 1.5rem;
@@ -66,7 +64,6 @@
 
 .logo-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 26rem;
 }
