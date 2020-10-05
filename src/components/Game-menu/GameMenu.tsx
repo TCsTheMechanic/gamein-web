@@ -9,16 +9,6 @@ import { GameMenuItems } from './GameMenuItems'
 export default () => {
   const [xPosition, setXPosition] = useState(0)
 
-  // const slideLimit = () => {
-  //   const itemsSize = GameMenuItems.length * 200
-  //   const windowSize = window.innerWidth
-  //   let position = xPosition - 400
-  //   if((windowSize - itemsSize) > position){
-  //     position = windowSize - itemsSize - 100
-  //   }
-  //   setXPosition(position)
-  // }
-
   const leftSlide = () => {
     setXPosition(xPosition + 400)
   }
