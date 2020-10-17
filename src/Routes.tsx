@@ -12,31 +12,31 @@ export default () => {
         render={() => <Landing background={''} />}
       />
       <Route
-        exact path='/CS GO'
+        exact path='/cs go'
         render={() => <Landing background={LandingBackgrounds[0].img} />}
       />
       <Route
-        exact path='/Fortnite'
+        exact path='/fortnite'
         render={() => <Landing background={LandingBackgrounds[1].img} />}
       />
       <Route
-        exact path='/League Of Legends'
+        exact path='/league of legends'
         render={() => <Landing background={LandingBackgrounds[2].img} />}
       />
       <Route
-        exact path='/Hearthstone'
+        exact path='/hearthstone'
         render={() => <Landing background={LandingBackgrounds[3].img} />}
       />
       <Route
-        exact path='/Rainbow Six Siege'
+        exact path='/rainbow six siege'
         render={() => <Landing background={LandingBackgrounds[4].img} />}
       />
       <Route
-        exact path='/Valorant'
+        exact path='/valorant'
         render={() => <Landing background={LandingBackgrounds[5].img} />}
       />
       <Route
-        exact path='/Apex Legends'
+        exact path='/apex legends'
         render={() => <Landing background={LandingBackgrounds[6].img} />}
       />
     </BrowserRouter>

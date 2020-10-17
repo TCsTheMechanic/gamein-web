@@ -10,36 +10,36 @@ export const GameMenuItems = [
   {
     id: 0,
     img: csIcon,
-    description: 'CS GO'
+    description: 'cs go'
   },
   {
     id: 1,
     img: fortniteIcon,
-    description: 'Fortnite'
+    description: 'fortnite'
   },
   {
     id: 2,
     img: lolIcon,
-    description: 'League of Legends'
+    description: 'league of legends'
   },
   {
     id: 3,
     img: hsIcon,
-    description: 'Hearthstone'
+    description: 'hearthstone'
   },
   {
     id: 4,
     img: r6Icon,
-    description: 'Rainbow Six Siege'
+    description: 'rainbow six siege'
   },
   {
     id: 5,
     img: valorantIcon,
-    description: 'Valorant'
+    description: 'valorant'
   },
   {
     id: 6,
     img: apexIcon,
-    description: 'Apex Legends'
+    description: 'apex legends'
   }
 ]
