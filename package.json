@@ -2,6 +2,8 @@
     "name": "gamein-frontend",
     "version": "0.1.0",
     "private": true,
+    "repository": "https://github.com/TCsTheMechanic/gamein-api.git",
+    "author": "TCsTheMechanic <ceruttioliveira@hotmail.com>",
     "dependencies": {
         "@testing-library/react": "^11.0.4",
         "@testing-library/user-event": "^7.1.2",
