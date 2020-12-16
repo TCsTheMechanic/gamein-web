@@ -23,14 +23,14 @@
     height: 10rem;
     background-color: #000000;
     border-radius: 10px;
-    opacity: 0;
+    opacity: .5;
     transition: all .2s linear;
     cursor: pointer;
 }
 
 .menu-left:hover,
 .menu-right:hover {
-    opacity: .7;
+    opacity: .8;
 }
 
 .menu-left {
